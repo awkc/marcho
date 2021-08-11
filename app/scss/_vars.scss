@@ -1,5 +1,4 @@
-$title: #1f2044;
-
+$title: #243f4d;
 
 
 %dmsans-700 {
@@ -25,4 +24,12 @@ $title: #1f2044;
 %rubik-500 {
   font-family: "Rubik-Medium", sans-serif;
   font-weight: 500;
+}
+
+
+@function max($numbers...) {
+  @return m#{a}x (#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n (#{$numbers});
 }

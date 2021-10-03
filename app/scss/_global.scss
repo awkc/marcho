@@ -14,7 +14,7 @@ body {
 .main {
   flex-grow: 1;
 }
- 
+
 .box {
   max-width: 1800px;
   margin: 0 auto;
@@ -28,10 +28,10 @@ body {
 }
 
 a {
-  line-height: 16px;
+  line-height: 24px;
   font-size: 16px;
   color: #7b7b7b;
-  @extend %dmsans-700;
+  @extend %rubik-400;
 }
 
 .title {
@@ -40,4 +40,36 @@ a {
   @extend %dmsans-700;
   margin-bottom: 40px;
   color: #191919;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    color: #737980;
+    padding-right: 7px;
+    &:last-child {
+      padding-right: 0;
+      color: rgb(221, 17, 17);
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
+
+.title--line {
+  &::after {
+    content: "";
+    background-image: url("../images/icons/line.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    left: 111px;
+    top: 11px;
+  }
 }

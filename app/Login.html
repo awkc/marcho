@@ -14,9 +14,7 @@
   <header class="header">
     <div class="box">
       <div class="header__inner">
-
         <div class="logo__text">Glee.</div>
-
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
@@ -62,23 +60,56 @@
 
 
   <main class="main">
-<section class="top">
-  <h2 class="top__title">Log in</h2>
-  <div class="breadcrumbs">
-  <ul class="breadcrumbs__list">
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">
-        Home /
-      </a>
-    </li>
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">
-        Log in
-      </a>
-    </li>
-  </ul>
-  </div>
-</section>
+    <section class="top">
+      <h2 class="top__title">Log in</h2>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Home /
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Log in
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="modal">
+      <div class="container">
+        <form class="modal__form" action="#">
+          <label class="modal__label">
+            Username or email address *
+            <input class="modal__input" type="text" required>
+          </label>
+          <label class="modal__label">
+            Password *
+            <input class="modal__input" type="password" required>
+          </label>
+          <button type="submit" class="modal__btn">Login</button>
+          <div class="modal__labal-item">
+            <labal class="modal__label">
+              <input type="checkbox">
+              Remember me
+            </labal>
+            <a class="modal__error" href="#">
+              Lost your password?
+            </a>
+          </div>
+          <a class="modal__notregistr" href="#">
+            Not registered? No problem
+          </a>
+          <div class="modal__btn-account">
+            <a class="modal__btn-link" href="#">
+              Create an account
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
 

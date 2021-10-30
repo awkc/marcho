@@ -1,5 +1,10 @@
 $(function() {
 
+$('.menu__btn').on('click', function(){
+  $('.menu__list').toggleClass('menu__list--active')
+  
+});
+
 $('.related__btn').on('click', function () {
   $('.related__btn').removeClass('related__btn--active');
   $(this).addClass('related__btn--active')
